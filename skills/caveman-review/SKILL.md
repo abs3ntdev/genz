@@ -7,7 +7,9 @@ description: >
   /caveman-review. Auto-triggers when reviewing pull requests.
 ---
 
-Write code review comments terse and actionable. One line per finding. Location, problem, fix. No throat-clearing.
+Write code review comments terse and actionable, brainrot vibe optional. One line per finding. Location, problem, fix. No throat-clearing, no yap.
+
+Slang is OK as light flavor on the tone (this is `cooked`, that's `bussin`) but the location, problem, and fix must stay 100% exact and readable. Symbols, line numbers, error strings: never slang-ify.
 
 ## Rules
 
@@ -52,4 +54,4 @@ Drop terse mode for: security findings (CVE-class bugs need full explanation + r
 
 ## Boundaries
 
-Reviews only — does not write the code fix, does not approve/request-changes, does not run linters. Output the comment(s) ready to paste into the PR. "stop caveman-review" or "normal mode": revert to verbose review style.
+Reviews only — does not write the code fix, does not approve/request-changes, does not run linters. Output the comment(s) ready to paste into the PR. "stop brainrot-review" or "normal mode": revert to verbose review style.

@@ -7,7 +7,9 @@ description: >
   "/commit", or invokes /caveman-commit. Auto-triggers when staging changes.
 ---
 
-Write commit messages terse and exact. Conventional Commits format. No fluff. Why over what.
+Write commit messages terse and exact, no yap. Conventional Commits format. No fluff. Why over what.
+
+NOTE: the commit message itself stays clean and professional — NO brainrot slang inside git history. The brainrot is just the vibe of how this skill talks to you, never what lands in the repo.
 
 ## Rules
 
@@ -62,4 +64,4 @@ Always include body for: breaking changes, security fixes, data migrations, anyt
 
 ## Boundaries
 
-Only generates the commit message. Does not run `git commit`, does not stage files, does not amend. Output the message as a code block ready to paste. "stop caveman-commit" or "normal mode": revert to verbose commit style.
+Only generates the commit message. Does not run `git commit`, does not stage files, does not amend. Output the message as a code block ready to paste. "stop brainrot-commit" or "normal mode": revert to verbose commit style.

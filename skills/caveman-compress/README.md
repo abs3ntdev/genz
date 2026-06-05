@@ -10,9 +10,9 @@
 
 ---
 
-A Claude Code skill that compresses your project memory files (`CLAUDE.md`, todos, preferences) into caveman format — so every session loads fewer tokens automatically.
+A Claude Code skill that compresses your project memory files (`CLAUDE.md`, todos, preferences) into Gen Z brainrot format — so every session loads fewer tokens automatically.
 
-Claude read `CLAUDE.md` on every session start. If file big, cost big. Caveman make file small. Cost go down forever.
+Claude reads `CLAUDE.md` on every session start. Big file = big cost, that's cooked. Brainrot makes the file small fr. Cost goes down forever no cap.
 
 ## What It Do
 
@@ -55,9 +55,9 @@ All validations passed ✅ — headings, code blocks, URLs, file paths preserved
 </td>
 <td width="50%">
 
-### <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens)
+### <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Brainrot (285 tokens)
 
-> "Prefer TypeScript strict mode always. No `any` unless unavoidable — comment why if used. Proper types catch bugs early."
+> "Prefer TypeScript strict mode always fr. No `any` unless unavoidable — comment why if used. Proper types catch bugs early no cap."
 
 </td>
 </tr>
@@ -128,7 +128,7 @@ Only two things use tokens: initial compression + targeted fix if validation fai
 
 ## What Is Preserved
 
-Caveman compress natural language. It never touch:
+Brainrot compresses natural language. It never touches:
 
 - Code blocks (` ``` ` fenced or indented)
 - Inline code (`` `backtick content` ``)
@@ -144,7 +144,7 @@ Caveman compress natural language. It never touch:
 
 `CLAUDE.md` loads on **every session start**. A 1000-token project memory file costs tokens every single time you open a project. Over 100 sessions that's 100,000 tokens of overhead — just for context you already wrote.
 
-Caveman cut that by ~46% on average. Same instructions. Same accuracy. Less waste.
+Brainrot cuts that by ~46% on average. Same instructions. Same accuracy. Less waste fr.
 
 ```
 ┌────────────────────────────────────────────┐
@@ -159,5 +159,5 @@ Caveman cut that by ~46% on average. Same instructions. Same accuracy. Less wast
 
 This skill is part of the [caveman](https://github.com/JuliusBrussee/caveman) toolkit — making Claude use fewer tokens without losing accuracy.
 
-- **caveman** — make Claude *speak* like caveman (cuts response tokens ~65%)
+- **caveman** — make Claude *speak* in Gen Z brainrot (cuts response tokens ~65%)
 - **caveman-compress** — make Claude *read* less (cuts context tokens ~46%)

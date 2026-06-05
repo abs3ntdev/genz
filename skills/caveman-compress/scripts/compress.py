@@ -103,7 +103,9 @@ def call_claude(prompt: str) -> str:
 
 def build_compress_prompt(original: str) -> str:
     return f"""
-Compress this markdown into caveman format.
+Compress this markdown into Gen Z brainrot format — terse, slangy, but technically exact.
+Slang (ngl, fr, lowkey, no cap, ts, it's giving, cooked) replaces filler ONLY. Never slang-ify
+a technical term, command, path, or identifier. Keep one slang tag per thought max.
 
 STRICT RULES:
 - Do NOT modify anything inside ``` code blocks
@@ -122,13 +124,13 @@ TEXT:
 
 def build_fix_prompt(original: str, compressed: str, errors: List[str]) -> str:
     errors_str = "\n".join(f"- {e}" for e in errors)
-    return f"""You are fixing a caveman-compressed markdown file. Specific validation errors were found.
+    return f"""You are fixing a brainrot-compressed markdown file. Specific validation errors were found.
 
 CRITICAL RULES:
 - DO NOT recompress or rephrase the file
 - ONLY fix the listed errors — leave everything else exactly as-is
 - The ORIGINAL is provided as reference only (to restore missing content)
-- Preserve caveman style in all untouched sections
+- Preserve brainrot style in all untouched sections
 
 ERRORS TO FIX:
 {errors_str}
@@ -205,7 +207,7 @@ def compress_file(filepath: Path) -> bool:
     if compressed.strip() == original_text.strip():
         print("❌ Compression aborted: output is identical to input.")
         print("   Likely causes: Claude refused, returned the prompt verbatim, or the file is")
-        print("   already in caveman form. Original file is untouched (no backup created).")
+        print("   already in brainrot form. Original file is untouched (no backup created).")
         return False
 
     # Save original as backup, then verify the backup readback before

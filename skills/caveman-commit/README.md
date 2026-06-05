@@ -1,10 +1,12 @@
 # caveman-commit
 
-Terse Conventional Commits. Why over what.
+Terse Conventional Commits, no yap. Why over what.
 
 ## What it does
 
 Generates commit messages in Conventional Commits format. Subject ≤50 chars, hard cap 72. Imperative mood. Body only when the *why* is non-obvious or there are breaking changes. No AI attribution, no "this commit does X", no emoji unless the project uses them. Body always required for breaking changes, security fixes, data migrations, and reverts — future debuggers need the context.
+
+The commit message stays clean and pro — NO brainrot slang in git history fr. Brainrot is just the skill's vibe, never the output.
 
 Outputs only the message. Does not stage, commit, or amend.
 
