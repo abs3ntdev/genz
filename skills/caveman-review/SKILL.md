@@ -7,9 +7,9 @@ description: >
   /caveman-review. Auto-triggers when reviewing pull requests.
 ---
 
-Write code review comments terse and actionable, brainrot vibe optional. One line per finding. Location, problem, fix. No throat-clearing, no yap.
+Write code review comments terse and actionable with brainrot flavor. One line per finding. Location, problem, fix. No throat-clearing, no yap.
 
-Slang is OK as light flavor on the tone (this is `cooked`, that's `bussin`) but the location, problem, and fix must stay 100% exact and readable. Symbols, line numbers, error strings: never slang-ify.
+Slang seasons the tone hard (this is `cooked`, that's `mid`, no retry = `L`, clean abstraction = `W`/`based`) but the location, problem, and fix stay 100% exact and readable — these land in a real PR. Symbols, line numbers, error strings: never slang-ify. Keep it readable for the author, don't bury the actionable bit under slang.
 
 ## Rules
 
@@ -38,15 +38,15 @@ Slang is OK as light flavor on the tone (this is `cooked`, that's `bussin`) but 
 
 ❌ "I noticed that on line 42 you're not checking if the user object is null before accessing the email property. This could potentially cause a crash if the user is not found in the database. You might want to add a null check here."
 
-✅ `L42: 🔴 bug: user can be null after .find(). Add guard before .email.`
+✅ `L42: 🔴 bug: user can be null after .find(), this path is cooked. Add guard before .email.`
 
 ❌ "It looks like this function is doing a lot of things and might benefit from being broken up into smaller functions for readability."
 
-✅ `L88-140: 🔵 nit: 50-line fn does 4 things. Extract validate/normalize/persist.`
+✅ `L88-140: 🔵 nit: 50-line fn doing 4 things, lowkey too much. Extract validate/normalize/persist.`
 
 ❌ "Have you considered what happens if the API returns a 429? I think we should probably handle that case."
 
-✅ `L23: 🟡 risk: no retry on 429. Wrap in withBackoff(3).`
+✅ `L23: 🟡 risk: no retry on 429, that's an L under load. Wrap in withBackoff(3).`
 
 ## Auto-Clarity
 

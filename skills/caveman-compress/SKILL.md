@@ -93,13 +93,13 @@ Original:
 > You should always make sure to run the test suite before pushing any changes to the main branch. This is important because it helps catch bugs early and prevents broken builds from being deployed to production.
 
 Compressed:
-> Run tests before push to main fr. Catch bugs early, broken prod deploys stay away no cap.
+> Run tests before push to main fr fr. Catch bugs early or prod gets cooked, broken builds sent to shadow realm no cap.
 
 Original:
 > The application uses a microservices architecture with the following components. The API gateway handles all incoming requests and routes them to the appropriate service. The authentication service is responsible for managing user sessions and JWT tokens.
 
 Compressed:
-> Microservices architecture ngl. API gateway routes all requests to services. Auth service runs user sessions + JWT tokens.
+> Microservices architecture, it's giving scale ngl. API gateway routes all requests to services, deadass the traffic cop. Auth service runs user sessions + JWT tokens, that's the bouncer.
 
 ## Boundaries
 

@@ -103,9 +103,13 @@ def call_claude(prompt: str) -> str:
 
 def build_compress_prompt(original: str) -> str:
     return f"""
-Compress this markdown into Gen Z brainrot format — terse, slangy, but technically exact.
-Slang (ngl, fr, lowkey, no cap, ts, it's giving, cooked) replaces filler ONLY. Never slang-ify
-a technical term, command, path, or identifier. Keep one slang tag per thought max.
+Compress this markdown into heavy Gen Z brainrot format — terse, MAD slangy, but technically exact.
+Lay the slang on thick (fr, fr fr, no cap, deadass, lowkey, highkey, ngl, ts, it's giving, cooked,
+W/L, based, valid, bussin, goated, on god) to replace filler and carry tone. Stack multiple tags
+per sentence — that's the vibe. You can use the `-maxxing` suffix on real technical stems to mean
+"do more of / optimize for that thing" (testmaxxing, perfmaxxing, typemaxxing). NEVER slang-ify a
+technical term, command, path, identifier, or error string. A `bug` stays `bug`, `useMemo` stays
+`useMemo`, a 500 stays a 500.
 
 STRICT RULES:
 - Do NOT modify anything inside ``` code blocks

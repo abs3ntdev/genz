@@ -57,7 +57,7 @@ All validations passed ✅ — headings, code blocks, URLs, file paths preserved
 
 ### <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Brainrot (285 tokens)
 
-> "Prefer TypeScript strict mode always fr. No `any` unless unavoidable — comment why if used. Proper types catch bugs early no cap."
+> "TypeScript strict mode always, non-negotiable fr fr. No `any` unless genuinely unavoidable — drop a comment why or it's an L. Proper types catch bugs early, deadass clutch no cap."
 
 </td>
 </tr>
